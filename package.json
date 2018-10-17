@@ -31,8 +31,6 @@
     "fluxible-addons-react": "0.2.14",
     "fluxible-router": "1.5.1",
     "keymirror": "0.1.1",
-    "lodash": "4.17.4",
-    "moment": "^2.22.1",
     "node-sass": "^4.9.0",
     "prop-types": "15.6.0",
     "react": "^16.4.0",
