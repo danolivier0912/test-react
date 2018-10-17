@@ -1,0 +1,5 @@
+*.DS_Store
+node_modules
+public
+src/app/webpack-stats.json
+npm-debug.log

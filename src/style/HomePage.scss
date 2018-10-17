@@ -1,0 +1,15 @@
+@import './constants/breaks';
+@import './constants/colors';
+
+html, body{
+  height: 100%;
+  margin: 0;
+
+  *{
+    font-family: sans-serif;
+  }
+}
+
+.HomePage{
+  padding: 12px;
+}
