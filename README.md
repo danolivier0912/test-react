@@ -38,7 +38,7 @@ Parmi les fichiers, vous interagirez sans doute avec les suivants :
 - `/src/style/Grid.scss` : feuille de style du composant grille (en sass)
 - `/src/stores/GridData.js` : source de données à mettre en forme
 - `/src/stores/GridStore.js` : store mettant le contenu de `GridData.js` à disposition du component `Grid.js`
-- `/src/actions/GridAction.js` : action permettant au component `Grid.js` d'interragir avec `GridStore.js`
+- `/src/actions/GridAction.js` : action permettant au component `Grid.js` d'interagir avec `GridStore.js`
 
 
 ## Structure du fichier GridData.js
