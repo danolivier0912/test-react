@@ -13,11 +13,12 @@ Une grille des programmes est une représentation des programmes TV diffusés pe
 
 ## Installation de l'application "test-react"
 
+Commencez par forker ce repository vers votre compte github.
 Exécutez les instructions suivantes dans un terminal pour récupérer le code source de `test-react` et démarrer l'application.
 
 ```
 # Clone du repository
-git clone https://github.com/DailyDinities/test-react.git
+git clone https://github.com/[votre_compte]/test-react.git
 
 # Installation des dépendances
 cd test-react
