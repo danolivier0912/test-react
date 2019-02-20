@@ -16,6 +16,10 @@ class Grid extends Component {
     return this.padStr(dte.getDate()) + '/' + this.padStr(dte.getMonth() + 1) + '/' + dte.getFullYear();
   }
 
+  secondsToHours(val) {
+    return val / 3600;
+  }
+
   render() {
     const { data } = this.props;
 
@@ -27,7 +31,17 @@ class Grid extends Component {
         <div className="Chns">
           {data.chns.map(chn =>
             <div key={chn.key} className="Chn">
-              {chn.key}
+              <div className="Chn-title">{chn.key}</div>
+              {chn.shows.map((show, i) => {
+                  const showLength = this.secondsToHours(show.endTime - show.startTime);
+                  const showHeight = showLength * 150;
+                  return (
+                      <div key={i} style={{minHeight: showHeight + 'px'}} className="show">
+                        <p className="show-title">{show.title}</p>
+                        {show.subTitle ? <p>{show.subTitle}</p> : ''}
+                      </div>
+                  )
+              })}
             </div>
            )}
         </div>

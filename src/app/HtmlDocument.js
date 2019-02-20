@@ -29,6 +29,7 @@ class HtmlDocument extends React.Component {
           <meta charSet="utf-8" />
           <title>Dev</title>
           <link rel="icon" type="image/png" sizes="32x32" href="/static/fav_32x32.png" />
+          <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
           {css.map((href, k) => <link key={k} rel="stylesheet" type="text/css" href={href} />)}
         </head>

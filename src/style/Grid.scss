@@ -1,32 +1,59 @@
 @import './constants/breaks';
 @import './constants/colors';
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 .Grid{
-  padding: 0 12px 12px 12px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-  border-radius: 2px;
-  overflow: hidden;
   position: relative;
+  font-family: 'Lato';
+  color: $sfrblack;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+  p {
+    margin: 0;
+  }
 
   .Title{
-    margin: 0 -12px 12px -12px;
-    border-bottom: solid $grey-5 1px;
+    font-size: 16px;
+    font-weight: 700;
     text-align: center;
-    padding: 4px 0;
-    border-top: solid $grey-medium 1px;
-    color: $grey-medium;
+    color: #fff;
+    padding: 15px 20px;
     user-select: none;
+    border-radius: 2px 2px 0 0;
+    background-color: $sfrblack;
+  }
+
+  .Chn-title {
+    display: block;
+    position: sticky;
+    text-align: center;
+    padding: 15px;
+    top: 0;
+    background-color: #f7f8fa;
+    border-bottom: solid $grey-5 1px;
   }
 
   .Chns{
     display: flex;
-
     .Chn{
       flex: 1;
-      text-align: center;
-
       &:not(:last-child){
         border-right: solid $grey-5 1px;
+      }
+    }
+  }
+
+  .show {
+    font-size: 12px;
+    padding: 15px;
+    border-bottom: 1px solid $grey-5;
+    .show-title {
+      font-weight: 700;
+      +p {
+        color: #9fa7b3;
+        margin-top: 5px;
       }
     }
   }
